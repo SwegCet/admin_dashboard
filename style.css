@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr, 5fr; /* I need 2 columns */
+}
+
+.header {
+    display: grid;
+    background-color: #64748b; /* Background color for clarity */
+    grid-column: 2 / 4;
+}
+
+.sidebar {
+    display: grid;
+    background-color: #38bdf8; /* Background Color for clarity */
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.main-content {
+    display: grid;
+    background-color: #a8a29e; /* Background Color for clarity */
+}
