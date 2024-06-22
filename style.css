@@ -24,4 +24,5 @@
 .main-content {
     display: grid;
     background-color: #a8a29e; /* Background Color for clarity */
+    grid-column: 2 / 4;
 }
