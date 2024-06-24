@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr, 5fr; /* I need 2 columns */
+    grid-template-columns: 2fr, 4fr;
+    /* I need 2 columns */
 }
 
 .header {
     display: grid;
-    background-color: #64748b; /* Background color for clarity */
-    grid-column: 2 / 4; /* Specifies which column to span across */
-    padding: 20px; 
+    background-color: #64748b;
+    /* Background color for clarity */
+    grid-column: 2 / 4;
+    /* Specifies which column to span across */
+    padding: 20px;
 }
 
 .top-header {
@@ -23,13 +26,13 @@
     padding-bottom: 20px;
 }
 
-.icon {
+.header-icon {
     width: 30px;
     height: 30px;
     justify-self: center;
 }
 
-input{
+input {
     width: 600px;
     height: 30px;
     background-color: white;
@@ -40,7 +43,7 @@ input{
 }
 
 input:hover {
-    background-color:#38bdf8;
+    background-color: #38bdf8;
 }
 
 .profile-picture {
@@ -91,7 +94,7 @@ input:hover {
     padding-right: 100px;
 }
 
- .intro {
+.intro {
     padding: 20px;
 }
 
@@ -122,12 +125,62 @@ button:hover {
 
 .sidebar {
     display: grid;
-    background-color: #38bdf8; /* Background Color for clarity */
+    background-color: #38bdf8;
+    /* Background Color for clarity */
+    grid-template-rows: 150px;
+    padding-left: 20px;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
 }
 
+.dashboard-container {
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+    height: 100px;
+    gap: 20px;
+}
 
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+.user-settings {
+    padding-top: 50px;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+.dashboard-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
 
 
 
@@ -138,6 +191,7 @@ button:hover {
 
 .main-content {
     display: grid;
-    background-color: #a8a29e; /* Background Color for clarity */
+    background-color: #a8a29e;
+    /* Background Color for clarity */
     grid-column: 2 / 4;
 }
